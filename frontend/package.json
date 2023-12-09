@@ -20,7 +20,7 @@
   },
   "scripts": {
     "full-start": "npm-run-all -p start-backend build",
-    "start-backend": "cd ../backend && npm start",
+    "start-backend": "cd ../backend/src node server.js",
     "start-frontend": "node your-frontend-script.js",
     "start": "react-scripts start",
     "build": "react-scripts build",
