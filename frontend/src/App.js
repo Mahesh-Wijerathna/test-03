@@ -1,5 +1,19 @@
 import logo from './logo.svg';
 import './App.css';
+import React from 'react';
+import ReactDOM from 'react-dom/client';
+import './index.css';
+import reportWebVitals from './reportWebVitals';
+import Locations from './Components/Locations'
+import MedicalCenter from './Components/signupMC';
+import Home from './Components/Home';
+import Signup from './Components/Signup';
+
+
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+
+import { useSelector } from "react-redux";
+import Signupscreen from './Components/signupscreen';
 
 function App() {
   return (
