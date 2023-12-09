@@ -1,9 +1,8 @@
 import logo from './logo.svg';
 import './App.css';
-import Locations from './Components/Locations'
-import MedicalCenter from './Components/signupMC';
+
 import Home from './Components/Home';
-import Signup from './Components/Signup'
+
 function App() {
   return (
     <div className="App">
