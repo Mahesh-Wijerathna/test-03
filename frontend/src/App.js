@@ -1,39 +1,25 @@
-import React from 'react';
-import ReactDOM from 'react-dom/client';
-import './index.css';
-import reportWebVitals from './reportWebVitals';
-import Locations from './Components/Locations'
-import MedicalCenter from './Components/signupMC';
-import Home from './Components/Home';
-import Signup from './Components/Signup';
+import logo from './logo.svg';
+import './App.css';
 
-
-import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
-
-import { useSelector } from "react-redux";
-import Signupscreen from './Components/signupscreen';
-
-const App = () => {
-  
+function App() {
   return (
-
-      <div className="app">
-
-          
-
-              <Router>
-                  <Routes>
-
-                      <Route path="/" element={<Home/>}/>,
-                      <Route path="/signup/tourist" element={<Signup/>}/>,
-                      <Route path="/signup/medical_center" element={<MedicalCenter/>}/>,
-                      <Route path="/create_locations" element={<Locations/>}/>,
-                  </Routes>
-              </Router>
-          
-      </div>
-
+    <div className="App">
+      <header className="App-header">
+        <img src={logo} className="App-logo" alt="logo" />
+        <p>
+          Edit <code>src/App.js</code> and save to reload 0k.
+        </p>
+        <a
+          className="App-link"
+          href="https://reactjs.org"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          Learn React
+        </a>
+      </header>
+    </div>
   );
-};
+}
 
 export default App;
