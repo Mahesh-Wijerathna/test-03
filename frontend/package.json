@@ -19,7 +19,7 @@
     "web-vitals": "^3.5.0"
   },
   "scripts": {
-    "full-start": "npm-run-all -p build start",
+    "full-start": "npm-run-all -p build",
     "start-backend": "node your-backend-script.js",
     "start-frontend": "node your-frontend-script.js",
     "start": "react-scripts start",
