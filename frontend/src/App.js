@@ -5,23 +5,24 @@ import './App.css';
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload 0k.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+
+    <div className="app">
+
+        
+
+            <Router>
+                <Routes>
+
+                    <Route path="/" element={<Home/>}/>,
+                    <Route path="/signup/tourist" element={<Signup/>}/>,
+                    <Route path="/signup/medical_center" element={<MedicalCenter/>}/>,
+                    <Route path="/create_locations" element={<Locations/>}/>,
+                </Routes>
+            </Router>
+        
     </div>
-  );
+
+);
 }
 
 export default App;
