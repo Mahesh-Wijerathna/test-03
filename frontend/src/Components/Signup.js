@@ -31,7 +31,7 @@ function Signup() {
 
   const handleSubmit = async (e) => {
     e.preventDefault();
-    
+     alert("hi");
     try {
       const response = await axios.post('http://localhost:3001/api/v1/tourist/', formData);
       navigate('/');
